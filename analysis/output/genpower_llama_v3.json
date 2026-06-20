@@ -1,0 +1,24 @@
+{
+  "model": "llama",
+  "stim": "v3",
+  "K": 6,
+  "temp": 0.8,
+  "object": {
+    "n_items": 24,
+    "honorific_gen_rate": 0.014,
+    "ci_lo": 0.0,
+    "ci_hi": 0.035
+  },
+  "subject": {
+    "n_items": 24,
+    "honorific_gen_rate": 0.188,
+    "ci_lo": 0.118,
+    "ci_hi": 0.278
+  },
+  "subject_suppl": {
+    "n_items": 24,
+    "honorific_gen_rate": 0.229,
+    "ci_lo": 0.153,
+    "ci_hi": 0.319
+  }
+}

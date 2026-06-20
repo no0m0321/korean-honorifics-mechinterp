@@ -1,0 +1,24 @@
+{
+  "model": "exaone",
+  "stim": "v3",
+  "K": 6,
+  "temp": 0.8,
+  "object": {
+    "n_items": 24,
+    "honorific_gen_rate": 0.021,
+    "ci_lo": 0.0,
+    "ci_hi": 0.062
+  },
+  "subject": {
+    "n_items": 24,
+    "honorific_gen_rate": 0.382,
+    "ci_lo": 0.278,
+    "ci_hi": 0.493
+  },
+  "subject_suppl": {
+    "n_items": 24,
+    "honorific_gen_rate": 0.312,
+    "ci_lo": 0.201,
+    "ci_hi": 0.438
+  }
+}

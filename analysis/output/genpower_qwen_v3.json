@@ -1,0 +1,24 @@
+{
+  "model": "qwen",
+  "stim": "v3",
+  "K": 6,
+  "temp": 0.8,
+  "object": {
+    "n_items": 24,
+    "honorific_gen_rate": 0.007,
+    "ci_lo": 0.0,
+    "ci_hi": 0.021
+  },
+  "subject": {
+    "n_items": 24,
+    "honorific_gen_rate": 0.153,
+    "ci_lo": 0.097,
+    "ci_hi": 0.215
+  },
+  "subject_suppl": {
+    "n_items": 24,
+    "honorific_gen_rate": 0.049,
+    "ci_lo": 0.021,
+    "ci_hi": 0.083
+  }
+}

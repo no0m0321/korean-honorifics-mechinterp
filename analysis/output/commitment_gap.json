@@ -1,0 +1,116 @@
+{
+  "exaone": {
+    "subject": {
+      "n": 128,
+      "cells": {
+        "commit_fail": 5,
+        "both_fail": 2,
+        "both_succeed": 116,
+        "ft_only": 5
+      },
+      "frac": {
+        "commit_fail": 0.039,
+        "both_fail": 0.016,
+        "both_succeed": 0.906,
+        "ft_only": 0.039
+      },
+      "commit_share_of_ft_failures": 0.714,
+      "ft_mean": 2.69,
+      "sq_mean": 1.84
+    },
+    "object": {
+      "n": 48,
+      "cells": {
+        "commit_fail": 2,
+        "both_fail": 35,
+        "both_succeed": 8,
+        "ft_only": 3
+      },
+      "frac": {
+        "commit_fail": 0.042,
+        "both_fail": 0.729,
+        "both_succeed": 0.167,
+        "ft_only": 0.062
+      },
+      "commit_share_of_ft_failures": 0.054,
+      "ft_mean": -2.61,
+      "sq_mean": -1.18
+    }
+  },
+  "llama": {
+    "subject": {
+      "n": 128,
+      "cells": {
+        "commit_fail": 0,
+        "both_fail": 3,
+        "both_succeed": 119,
+        "ft_only": 6
+      },
+      "frac": {
+        "commit_fail": 0.0,
+        "both_fail": 0.023,
+        "both_succeed": 0.93,
+        "ft_only": 0.047
+      },
+      "commit_share_of_ft_failures": 0.0,
+      "ft_mean": 3.53,
+      "sq_mean": 2.74
+    },
+    "object": {
+      "n": 48,
+      "cells": {
+        "commit_fail": 25,
+        "both_fail": 12,
+        "both_succeed": 11,
+        "ft_only": 0
+      },
+      "frac": {
+        "commit_fail": 0.521,
+        "both_fail": 0.25,
+        "both_succeed": 0.229,
+        "ft_only": 0.0
+      },
+      "commit_share_of_ft_failures": 0.676,
+      "ft_mean": -0.95,
+      "sq_mean": 0.96
+    }
+  },
+  "qwen": {
+    "subject": {
+      "n": 128,
+      "cells": {
+        "commit_fail": 8,
+        "both_fail": 2,
+        "both_succeed": 113,
+        "ft_only": 5
+      },
+      "frac": {
+        "commit_fail": 0.062,
+        "both_fail": 0.016,
+        "both_succeed": 0.883,
+        "ft_only": 0.039
+      },
+      "commit_share_of_ft_failures": 0.8,
+      "ft_mean": 3.25,
+      "sq_mean": 2.96
+    },
+    "object": {
+      "n": 48,
+      "cells": {
+        "commit_fail": 10,
+        "both_fail": 17,
+        "both_succeed": 16,
+        "ft_only": 5
+      },
+      "frac": {
+        "commit_fail": 0.208,
+        "both_fail": 0.354,
+        "both_succeed": 0.333,
+        "ft_only": 0.104
+      },
+      "commit_share_of_ft_failures": 0.37,
+      "ft_mean": -0.65,
+      "sq_mean": 0.63
+    }
+  }
+}

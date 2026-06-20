@@ -1,0 +1,14 @@
+accelerate==1.14.0
+huggingface-hub==1.20.1
+kiwipiepy==0.23.2
+matplotlib==3.11.0
+nnsight==0.7.0
+numpy==2.4.6
+pandas==3.0.3
+safetensors==0.8.0
+scikit-learn==1.9.0
+scipy==1.17.1
+statsmodels==0.14.6
+tokenizers==0.22.2
+torch==2.12.1
+transformers==5.12.1

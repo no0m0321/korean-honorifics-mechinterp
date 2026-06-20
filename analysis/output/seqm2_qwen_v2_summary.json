@@ -1,0 +1,15 @@
+{
+  "model": "qwen",
+  "stim": "v2",
+  "metric": "token-mean seq logprob diff (hon-pln)",
+  "subject": {
+    "mean": 2.956,
+    "frac_positive": 0.945,
+    "n": 128
+  },
+  "object": {
+    "mean": 0.633,
+    "frac_positive": 0.542,
+    "n": 48
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "model": "llama",
+  "n_layers": 32,
+  "subject_honorific": {
+    "final_logit_diff": 3.53,
+    "crossover_layer": 16,
+    "max_logit_diff": 5.418
+  },
+  "subject_neutral": {
+    "final_logit_diff": 0.131,
+    "crossover_layer": 17,
+    "max_logit_diff": 2.5
+  },
+  "object_honorific": {
+    "final_logit_diff": -0.948,
+    "crossover_layer": null,
+    "max_logit_diff": 0.202
+  },
+  "object_neutral": {
+    "final_logit_diff": -1.625,
+    "crossover_layer": null,
+    "max_logit_diff": -0.004
+  }
+}

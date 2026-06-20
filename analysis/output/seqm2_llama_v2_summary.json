@@ -1,0 +1,15 @@
+{
+  "model": "llama",
+  "stim": "v2",
+  "metric": "token-mean seq logprob diff (hon-pln)",
+  "subject": {
+    "mean": 2.738,
+    "frac_positive": 0.93,
+    "n": 128
+  },
+  "object": {
+    "mean": 0.96,
+    "frac_positive": 0.75,
+    "n": 48
+  }
+}

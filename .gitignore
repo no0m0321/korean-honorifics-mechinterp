@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+analysis/output/acts_*.npz
+_smoke/*.log
+_smoke/*.output
+_smoke/dl_*.log

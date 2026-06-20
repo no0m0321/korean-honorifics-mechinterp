@@ -1,0 +1,132 @@
+{
+  "model": "llama",
+  "stim": "v2",
+  "n_layers": 32,
+  "M1": {
+    "subject": {
+      "layer": 8,
+      "task_acc": 1.0,
+      "ctrl_acc": 0.504,
+      "ctrl_sd": 0.115,
+      "selectivity": 0.496,
+      "noun_disjoint_task_acc": 0.996,
+      "noun_disjoint_selectivity": 0.478,
+      "n_referent": 38,
+      "surface_ngram_acc": 1.0,
+      "n": 256,
+      "n_lexeme": 16
+    },
+    "object_pooled": {
+      "layer": 7,
+      "task_acc": 0.979,
+      "ctrl_acc": 0.445,
+      "ctrl_sd": 0.212,
+      "selectivity": 0.535,
+      "noun_disjoint_task_acc": 0.906,
+      "noun_disjoint_selectivity": 0.377,
+      "n_referent": 33,
+      "surface_ngram_acc": 0.99,
+      "n": 96,
+      "n_lexeme": 6
+    },
+    "object_dative": {
+      "layer": 1,
+      "task_acc": 1.0,
+      "ctrl_acc": 0.527,
+      "ctrl_sd": 0.283,
+      "selectivity": 0.473,
+      "noun_disjoint_task_acc": 1.0,
+      "noun_disjoint_selectivity": 0.497,
+      "n_referent": 26,
+      "surface_ngram_acc": 1.0,
+      "n": 48,
+      "n_lexeme": 3
+    },
+    "object_accusative": {
+      "layer": 30,
+      "task_acc": 0.958,
+      "ctrl_acc": 0.502,
+      "ctrl_sd": 0.286,
+      "selectivity": 0.457,
+      "noun_disjoint_task_acc": 0.833,
+      "noun_disjoint_selectivity": 0.339,
+      "n_referent": 27,
+      "surface_ngram_acc": 0.958,
+      "n": 48,
+      "n_lexeme": 3
+    }
+  },
+  "M2": {
+    "subject_final_LD_mean": 3.53,
+    "object_final_LD_mean": -0.948,
+    "subject_cross_frac": 0.977,
+    "object_cross_frac": 0.229,
+    "lexeme_welch_t": 7.692,
+    "lexeme_welch_p": 1.4615923666702865e-05,
+    "lexeme_permutation_p": 0.0,
+    "cohen_d_lexeme": 3.466,
+    "subject_lexeme_means": {
+      "subj:가다": 1.65,
+      "subj:기다리다": 4.08,
+      "subj:도착하다": 2.82,
+      "subj:떠나다": 4.39,
+      "subj:받다": 4.27,
+      "subj:보내다": 0.04,
+      "subj:앉다": 4.67,
+      "subj:오다": 3.84,
+      "subj:웃다": 3.43,
+      "subj:일하다": 3.22,
+      "subj:읽다": 4.2,
+      "subj:입다": 3.6,
+      "subj:준비하다": 3.22,
+      "subj:참석하다": 4.64,
+      "subj:찾다": 5.71,
+      "subj:출발하다": 2.69
+    },
+    "object_lexeme_means": {
+      "obj:데리고_가다": -0.83,
+      "obj:만나다": -1.81,
+      "obj:말하다": -0.17,
+      "obj:묻다": -2.83,
+      "obj:보다": 0.31,
+      "obj:주다": -0.35
+    }
+  },
+  "M5": {
+    "object_lexeme_freq_vs_LD": [
+      {
+        "lexeme": "obj:데리고_가다",
+        "final_LD": -0.83,
+        "log_freq_ratio": -0.405
+      },
+      {
+        "lexeme": "obj:만나다",
+        "final_LD": -1.81,
+        "log_freq_ratio": 4.43
+      },
+      {
+        "lexeme": "obj:말하다",
+        "final_LD": -0.17,
+        "log_freq_ratio": 5.223
+      },
+      {
+        "lexeme": "obj:묻다",
+        "final_LD": -2.83,
+        "log_freq_ratio": 3.15
+      },
+      {
+        "lexeme": "obj:보다",
+        "final_LD": 0.31,
+        "log_freq_ratio": 6.122
+      },
+      {
+        "lexeme": "obj:주다",
+        "final_LD": -0.35,
+        "log_freq_ratio": 2.057
+      }
+    ],
+    "pearson_r": 0.229,
+    "pearson_p": 0.6629933237694353,
+    "note": "음의 r = 희소(고 log_freq_ratio)할수록 logit_diff 낮음(실패). 6어휘로 빈도-독립 기제 식별 불가."
+  }
+}

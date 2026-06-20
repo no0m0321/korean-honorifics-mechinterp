@@ -1,0 +1,50 @@
+[
+  {
+    "model": "exaone",
+    "M3_obj_max_patched_LD": -2.61,
+    "M3_obj_any_cross0": false,
+    "M3_subj_max_patched_LD": 2.69,
+    "M4_subj_honor_max": 3.77,
+    "M4_obj_honor_max": 1.62,
+    "M4_obj_cells_cross0": "3/18",
+    "M4_obj_per_lexeme": {
+      "obj:주다": 2.19,
+      "obj:말하다": 3.38,
+      "obj:묻다": 2.52,
+      "obj:보다": 1.18,
+      "obj:만나다": 1.28
+    }
+  },
+  {
+    "model": "llama",
+    "M3_obj_max_patched_LD": -0.95,
+    "M3_obj_any_cross0": false,
+    "M3_subj_max_patched_LD": 3.53,
+    "M4_subj_honor_max": 3.18,
+    "M4_obj_honor_max": 1.23,
+    "M4_obj_cells_cross0": "5/18",
+    "M4_obj_per_lexeme": {
+      "obj:주다": 2.46,
+      "obj:말하다": 1.56,
+      "obj:묻다": 1.24,
+      "obj:보다": 2.01,
+      "obj:만나다": 1.48
+    }
+  },
+  {
+    "model": "qwen",
+    "M3_obj_max_patched_LD": -0.65,
+    "M3_obj_any_cross0": false,
+    "M3_subj_max_patched_LD": 3.25,
+    "M4_subj_honor_max": 0.31,
+    "M4_obj_honor_max": -1.13,
+    "M4_obj_cells_cross0": "0/21",
+    "M4_obj_per_lexeme": {
+      "obj:주다": 0.02,
+      "obj:말하다": -3.66,
+      "obj:묻다": -2.84,
+      "obj:보다": 1.83,
+      "obj:만나다": 2.62
+    }
+  }
+]

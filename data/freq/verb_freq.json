@@ -1,0 +1,74 @@
+{
+  "corpus": "daekeun-ml/naver-news-summarization-ko",
+  "n_doc": 22194,
+  "n_verb_token": 574828,
+  "object_suppletive_pairs": [
+    {
+      "pair": "주→드리",
+      "pln_stem": "주",
+      "hon_stem": "드리",
+      "pln_freq": 7869,
+      "hon_freq": 1005,
+      "log_freq_ratio": 2.057
+    },
+    {
+      "pair": "말하→말씀드리",
+      "pln_stem": "말하",
+      "hon_stem": "말씀드리",
+      "pln_freq": 12245,
+      "hon_freq": 65,
+      "log_freq_ratio": 5.223
+    },
+    {
+      "pair": "묻→여쭈",
+      "pln_stem": "묻",
+      "hon_stem": "여쭈",
+      "pln_freq": 349,
+      "hon_freq": 14,
+      "log_freq_ratio": 3.15
+    },
+    {
+      "pair": "보→뵙",
+      "pln_stem": "보",
+      "hon_stem": "뵙",
+      "pln_freq": 10940,
+      "hon_freq": 23,
+      "log_freq_ratio": 6.122
+    },
+    {
+      "pair": "만나→뵙",
+      "pln_stem": "만나",
+      "hon_stem": "뵙",
+      "pln_freq": 2013,
+      "hon_freq": 23,
+      "log_freq_ratio": 4.43
+    },
+    {
+      "pair": "데리→모시",
+      "pln_stem": "데리",
+      "hon_stem": "모시",
+      "pln_freq": 39,
+      "hon_freq": 59,
+      "log_freq_ratio": -0.405
+    }
+  ],
+  "subject_stems": {
+    "읽": 205,
+    "받": 11714,
+    "찾": 2397,
+    "입": 516,
+    "보내": 1700,
+    "기다리": 1146,
+    "준비하": 0,
+    "가": 5725,
+    "오": 9382,
+    "웃": 90,
+    "앉": 133,
+    "떠나": 399,
+    "일하": 7,
+    "도착하": 0,
+    "출발하": 0,
+    "참석하": 0
+  },
+  "note": "log_freq_ratio>0 이면 평형 어휘가 보충법 어휘보다 빈번(=보충법 희소)."
+}

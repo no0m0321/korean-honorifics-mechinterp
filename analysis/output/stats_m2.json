@@ -1,0 +1,140 @@
+{
+  "model": "exaone",
+  "n_layers": 32,
+  "measure": "final_logit_diff = logit(경어형 첫토큰) - logit(평형형 첫토큰) @ 마지막 층",
+  "condition": "honorific only",
+  "n_boot": 10000,
+  "seed": 20260620,
+  "counts": {
+    "subject_n_items": 96,
+    "subject_n_lexemes": 16,
+    "object_n_items": 36,
+    "object_n_lexemes": 6
+  },
+  "test1_descriptives": {
+    "subject": {
+      "mean": 4.250630855560303,
+      "median": 4.5,
+      "sd": 1.58880615234375,
+      "min": -1.5390625,
+      "max": 7.5625,
+      "frac_positive": 0.9895833333333334,
+      "n": 96
+    },
+    "object": {
+      "mean": -0.92578125,
+      "median": -1.72900390625,
+      "sd": 3.917358160018921,
+      "min": -8.1953125,
+      "max": 6.03515625,
+      "frac_positive": 0.3888888888888889,
+      "n": 36
+    }
+  },
+  "test1a_subject_gt0": {
+    "lexeme_mean_mean": 4.250630855560303,
+    "wilcoxon_stat": 136.0,
+    "wilcoxon_p_greater": 1.52587890625e-05,
+    "cluster_boot_mean": 4.247540926599503,
+    "cluster_boot_ci95": [
+      3.777564060688019,
+      4.723958492279053
+    ],
+    "cluster_boot_p_vs0_twosided": 0.0,
+    "frac_lexemes_positive": 1.0
+  },
+  "test1b_object_lt0": {
+    "lexeme_mean_mean": -0.9257811903953552,
+    "wilcoxon_stat": 7.0,
+    "wilcoxon_p_less": 0.28125,
+    "cluster_boot_mean": -0.9487563665692694,
+    "cluster_boot_ci95": [
+      -3.629150390625,
+      2.0299479961395264
+    ],
+    "cluster_boot_p_vs0_twosided": 0.5036,
+    "frac_lexemes_negative": 0.6666666666666666
+  },
+  "test1c_subject_vs_object_OLS_cluster_robust": {
+    "note": "OLS ld ~ is_subject, cluster-robust SE on lexeme (군집수=22). intercept=객체 평균, is_subject=주체-객체 차.",
+    "intercept_object_mean": -0.925781250000003,
+    "coef_subject_minus_object": 5.17641194661458,
+    "se_cluster": 1.4974604552010233,
+    "t": 3.4567937528071044,
+    "p_value": 0.000546643053905054,
+    "ci95": [
+      2.2414433861476195,
+      8.111380507081542
+    ],
+    "n_clusters": 22
+  },
+  "test1c_lexememeans_mannwhitney": {
+    "U": 85.0,
+    "p_greater": 0.002265020739287138,
+    "subject_lexeme_mean": 4.250630855560303,
+    "object_lexeme_mean": -0.9257811903953552
+  },
+  "test2_crossover": {
+    "definition": "per-item crossover = diff[item,:]가 음->양 전환 후 끝까지 유지되는 첫 층; 없으면 결측",
+    "subject": {
+      "n_items": 96,
+      "n_has_crossover": 95,
+      "frac_has_crossover": 0.9895833333333334,
+      "crossover_layer_median": 24.0,
+      "crossover_layer_iqr": [
+        20.0,
+        28.0
+      ],
+      "crossover_layer_min_max": [
+        0.0,
+        31.0
+      ]
+    },
+    "object": {
+      "n_items": 36,
+      "n_has_crossover": 14,
+      "frac_has_crossover": 0.3888888888888889,
+      "crossover_layer_median": 11.0,
+      "crossover_layer_iqr": [
+        8.0,
+        18.75
+      ],
+      "crossover_layer_min_max": [
+        6.0,
+        31.0
+      ]
+    },
+    "contingency_table_[has,no]_x_[subject,object]": [
+      [
+        95,
+        1
+      ],
+      [
+        14,
+        22
+      ]
+    ],
+    "fisher_exact_odds_ratio": 149.28571428571428,
+    "fisher_exact_p_greater": 1.2242142441498254e-14,
+    "chi2": 65.65995213402473,
+    "chi2_dof": 1,
+    "chi2_p": 5.358370834246853e-16,
+    "layer_distribution_mannwhitney": {
+      "U": 866.5,
+      "p_twosided": 0.06693137880892612,
+      "note": "추월층이 존재하는 항목만 비교"
+    }
+  },
+  "test3_effect_size": {
+    "subject_minus_object_final_LD": 5.176412105560303,
+    "cluster_boot_mean_diff": 5.187650363206863,
+    "cluster_boot_ci95": [
+      2.182307094335556,
+      7.877221477031708
+    ],
+    "cluster_boot_p_vs0_twosided": 0.0002,
+    "cohens_d_item_level": 2.117462158203125,
+    "cohens_d_lexeme_level": 2.444938898086548,
+    "note": "효과크기는 주체-객체 최종 logit_diff 차. CI는 어휘 군집 부트스트랩."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "model": "qwen",
+  "stim": "v2",
+  "object": {
+    "n": 48,
+    "baseline_honorific_rate": 0.0,
+    "forced_hon_first_rate": 0.646,
+    "forced_pln_first_rate": 0.042,
+    "rescue": 0.646
+  },
+  "subject": {
+    "n": 128,
+    "baseline_honorific_rate": 0.055,
+    "forced_hon_first_rate": 0.766,
+    "forced_pln_first_rate": 0.242,
+    "rescue": 0.711
+  }
+}

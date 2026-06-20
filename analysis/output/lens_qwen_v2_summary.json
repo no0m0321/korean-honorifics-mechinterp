@@ -1,0 +1,24 @@
+{
+  "model": "qwen",
+  "n_layers": 36,
+  "subject_honorific": {
+    "final_logit_diff": 3.25,
+    "crossover_layer": 24,
+    "max_logit_diff": 6.393
+  },
+  "subject_neutral": {
+    "final_logit_diff": -1.657,
+    "crossover_layer": null,
+    "max_logit_diff": 1.263
+  },
+  "object_honorific": {
+    "final_logit_diff": -0.655,
+    "crossover_layer": null,
+    "max_logit_diff": 1.99
+  },
+  "object_neutral": {
+    "final_logit_diff": -1.808,
+    "crossover_layer": null,
+    "max_logit_diff": 1.793
+  }
+}

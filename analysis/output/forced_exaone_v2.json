@@ -1,0 +1,18 @@
+{
+  "model": "exaone",
+  "stim": "v2",
+  "object": {
+    "n": 48,
+    "baseline_honorific_rate": 0.062,
+    "forced_hon_first_rate": 1.0,
+    "forced_pln_first_rate": 0.0,
+    "rescue": 0.938
+  },
+  "subject": {
+    "n": 128,
+    "baseline_honorific_rate": 0.18,
+    "forced_hon_first_rate": 0.844,
+    "forced_pln_first_rate": 0.094,
+    "rescue": 0.664
+  }
+}

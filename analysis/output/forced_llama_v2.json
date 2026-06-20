@@ -1,0 +1,18 @@
+{
+  "model": "llama",
+  "stim": "v2",
+  "object": {
+    "n": 48,
+    "baseline_honorific_rate": 0.021,
+    "forced_hon_first_rate": 0.812,
+    "forced_pln_first_rate": 0.0,
+    "rescue": 0.792
+  },
+  "subject": {
+    "n": 128,
+    "baseline_honorific_rate": 0.117,
+    "forced_hon_first_rate": 0.562,
+    "forced_pln_first_rate": 0.359,
+    "rescue": 0.445
+  }
+}

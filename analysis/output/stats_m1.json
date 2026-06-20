@@ -1,0 +1,79 @@
+{
+  "model": "exaone",
+  "measure_position": "동사 생성 직전 잔차 (probe 정점 층 고정)",
+  "peak_layers": {
+    "subject": 3,
+    "object": 5
+  },
+  "n_boot": 2000,
+  "seed": 0,
+  "cv": "GroupKFold(lexeme, 5), StandardScaler, LogisticRegression(C=0.5)",
+  "control_task": "어휘별 무작위 0/1 고정 레이블 (Hewitt & Liang 2019)",
+  "per_axis": {
+    "subject": {
+      "layer": 3,
+      "n_items": 192,
+      "n_lexeme": 16,
+      "n_frame": 96,
+      "task_acc": 1.0,
+      "ctrl_acc": 0.453125,
+      "selectivity": 0.546875,
+      "selectivity_ci95": [
+        0.44270833333333337,
+        0.6510416666666667
+      ],
+      "selectivity_gt0": true,
+      "boot_p_selectivity_le0": 0.0
+    },
+    "object": {
+      "layer": 5,
+      "n_items": 72,
+      "n_lexeme": 6,
+      "n_frame": 36,
+      "task_acc": 0.9861111111111112,
+      "ctrl_acc": 0.4305555555555556,
+      "selectivity": 0.5555555555555556,
+      "selectivity_ci95": [
+        0.25,
+        0.8611111111111112
+      ],
+      "selectivity_gt0": true,
+      "boot_p_selectivity_le0": 0.0
+    }
+  },
+  "mixed_effects": {
+    "method": "BinomialBayesMixedGLM(fit_vb)",
+    "random_effects": [
+      "lexeme",
+      "frame"
+    ],
+    "axis_obj_coef": -0.8038936209751953,
+    "axis_obj_sd": 1.0518667598832248,
+    "axis_obj_ci95": [
+      -2.8655524703463158,
+      1.2577652283959253
+    ],
+    "axis_obj_or": 0.447582848998963,
+    "axis_obj_or_ci95": [
+      0.05695165833653701,
+      3.517551772316132
+    ],
+    "intercept": 6.241690133496278,
+    "converged": true,
+    "fallback_log": []
+  },
+  "selectivity_difference_object_minus_subject": {
+    "point": 0.00868055555555558,
+    "boot_ci95": [
+      -0.3160590277777779,
+      0.31601562499999974
+    ],
+    "boot_p_diff_le0": 0.4815,
+    "object_gt_subject_sig": false
+  },
+  "core_tests": {
+    "a_subject_selectivity_gt0": true,
+    "a_object_selectivity_gt0": true,
+    "b_object_gt_subject": false
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "model": "exaone",
+  "n_layers": 32,
+  "subject_honorific": {
+    "final_logit_diff": 4.251,
+    "crossover_layer": 24,
+    "max_logit_diff": 4.992
+  },
+  "subject_neutral": {
+    "final_logit_diff": -0.058,
+    "crossover_layer": null,
+    "max_logit_diff": -0.058
+  },
+  "object_honorific": {
+    "final_logit_diff": -0.926,
+    "crossover_layer": null,
+    "max_logit_diff": 1.944
+  },
+  "object_neutral": {
+    "final_logit_diff": -6.711,
+    "crossover_layer": null,
+    "max_logit_diff": 0.329
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "model": "exaone",
+  "response": "final(layer31) per-item logit_diff (honorific)",
+  "n_total_honorific": 132,
+  "n_subject": 96,
+  "n_object": 36,
+  "descriptives": {
+    "object_final_logit_diff_mean": -0.9258,
+    "object_final_logit_diff_sd": 3.9174,
+    "subject_final_logit_diff_mean": 4.2506,
+    "subject_final_logit_diff_sd": 1.5888,
+    "raw_axis_gap_subj_minus_obj": 5.1764,
+    "n_object_lexemes": 6,
+    "object_lexeme_means": {
+      "데리고 가다": 4.958,
+      "만나다": -5.554,
+      "말하다": -0.547,
+      "묻다": -2.263,
+      "보다": -3.928,
+      "주다": 1.779
+    },
+    "object_log_freq_ratio_by_lexeme": {
+      "데리고 가다": -0.405,
+      "만나다": 4.43,
+      "말하다": 5.223,
+      "묻다": 3.15,
+      "보다": 6.122,
+      "주다": 2.057
+    }
+  },
+  "task2_object_freq_regression": {
+    "formula": "final_logit_diff ~ log_freq_ratio  (cluster-robust by lexeme)",
+    "n_obs": 36,
+    "n_clusters_lexeme": 6,
+    "intercept": 3.6989,
+    "slope_log_freq_ratio": -1.3485,
+    "slope_se": 0.2734,
+    "slope_p": 0.0,
+    "r_squared": 0.5715,
+    "note": "음의 기울기면 경어형이 희귀할수록(고 log_freq_ratio) 경어 우세가 낮음=빈도가 실패에 기여. 군집 6개라 robust SE는 소표본 한계.",
+    "lexeme_level_pearson_r": -0.8297,
+    "lexeme_level_r_squared": 0.6884,
+    "lexeme_level_n": 6
+  },
+  "task3_axis_after_freq": {
+    "method": "mixedlm (lexeme random intercept)",
+    "converged": true,
+    "axis_object_coef": -5.1764,
+    "axis_object_se": 0.6814,
+    "axis_object_z": -7.5968,
+    "axis_object_p": 3.036084463325791e-14,
+    "freq_cov_coef": -1.3485,
+    "freq_cov_p": 5.036706326248505e-07,
+    "formula": "final_logit_diff ~ axis_object + freq_cov",
+    "coding": "axis_object: 1=객체(보충법),0=주체(-시-굴절). freq_cov: 객체는 log_freq_ratio 중심화, 주체는 0(=객체평균빈도). axis_object 계수 = 객체평균빈도에서 보충-굴절 격차(음수면 보충이 낮음).",
+    "object_mean_log_freq_ratio": 3.4295
+  },
+  "task3_axis_after_freq_clusterOLS": {
+    "formula": "final_logit_diff ~ axis_object + freq_cov",
+    "method": "cluster-robust OLS by lexeme (always-reported companion)",
+    "axis_object_coef": -5.1764,
+    "axis_object_se": 0.8649,
+    "axis_object_t": -5.9852,
+    "axis_object_p": 2.1611694605581517e-09,
+    "freq_cov_coef": -1.3485,
+    "freq_cov_p": 1.067686898858165e-07,
+    "r_squared": 0.6821,
+    "n_clusters_lexeme": 22
+  },
+  "task3_robustness_freqmatched_subset": {
+    "method": "cluster-robust OLS by lexeme on frequency-band-matched subset",
+    "match_band_plain_freq": [
+      39.0,
+      11714.0
+    ],
+    "n_object_matched": 30,
+    "n_subject_matched": 66,
+    "n_object_lexemes_matched": 5,
+    "n_subject_lexemes_matched": 11,
+    "axis_object_coef": -5.1733,
+    "axis_object_se": 1.6192,
+    "axis_object_p": 0.0013983024559958582,
+    "log10_plain_freq_coef": -1.1967,
+    "log10_plain_freq_p": 0.1592874949075741,
+    "note": "평형형 절대빈도가 겹치는 대역에서도 axis_object 가 유의 음수면 빈도통제 후 기제 해리 잔존. 단 이 통제는 '평형형 빈도'이며 경어형 희귀성(log_freq_ratio)과는 다른 통제임."
+  },
+  "verdict": "FREQUENCY_PLUS_MECHANISM_MIXED",
+  "verdict_ko": "빈도+기제 혼합: 경어형 희귀성(빈도)이 보충법 우세를 유의하게 낮추지만(과제2), 빈도 통제 후에도 보충<굴절 축 격차가 잔존(과제3).",
+  "verdict_inputs": {
+    "freq_explains_object_failure(task2 slope p<.05)": true,
+    "axis_gap_survives_freq_primary(p<.05 & coef<0)": true,
+    "axis_gap_survives_freq_clusterOLS(p<.05 & coef<0)": true
+  },
+  "caveats": "객체 어휘 6개(군집6)로 robust/혼합 SE는 소표본 한계. 빈도비(log_freq_ratio)는 객체 보충쌍에만 정의되어 결합모형에선 주체=객체평균으로 두어 axis 더미가 '객체평균빈도에서의 축 격차'를 추정(생성적 -시-엔 보충빈도비 부재 때문). 빈도대 매칭은 '평형형 절대빈도' 기준이라 '경어형 희귀성' 통제와는 다른 보조 통제."
+}

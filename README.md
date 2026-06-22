@@ -1,7 +1,11 @@
 # 한국어 객체 높임 보충법 실패의 기계적 해석
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20791501.svg)](https://doi.org/10.5281/zenodo.20791501)
+
 > 굴절–보충법 비대칭은 모델 내부 어디에서 생기는가
 > *A Mechanistic Account of Suppletive Object-Honorific Failure in Korean LLMs*
+>
+> 김승우 (잠신고등학교) · [논문 초고](docs/PAPER_DRAFT.md) · [결과 정직본](RESULTS.md) · [사전등록](PREREGISTRATION.md)
 
 선행 연구 김승우(2026a) 「한국어 경어법에 대한 LLM의 프롬프트 민감성」의 직접 후속.
 블랙박스 행동 관찰 → 화이트박스 기계적 해석으로의 전환.

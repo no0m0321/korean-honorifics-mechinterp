@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "한국어 객체 높임 보충법 실패의 기계적 해석 (A Mechanistic Account of Suppletive Object-Honorific Failure in Korean LLMs)"
+authors:
+  - family-names: "Kim"
+    given-names: "Seungwoo"
+    affiliation: "Jamsin High School"
+date-released: 2026-06-21
+version: "1.0.1"
+doi: "10.5281/zenodo.20791501"
+url: "https://github.com/no0m0321/korean-honorifics-mechinterp"
+license: "MIT"
+keywords:
+  - mechanistic interpretability
+  - Korean honorifics
+  - suppletion
+  - large language models
+  - nnsight

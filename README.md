@@ -1,6 +1,6 @@
 # 한국어 객체 높임 보충법 실패의 기계적 해석
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20791501.svg)](https://doi.org/10.5281/zenodo.20791501)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20791500.svg)](https://doi.org/10.5281/zenodo.20791500)
 
 > 굴절–보충법 비대칭은 모델 내부 어디에서 생기는가
 > *A Mechanistic Account of Suppletive Object-Honorific Failure in Korean LLMs*

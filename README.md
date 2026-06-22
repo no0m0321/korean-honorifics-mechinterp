@@ -66,4 +66,7 @@ uv pip install -r requirements.txt
 
 ## 상태
 
-진행 중. 인프라·자극 설계·사전등록 완료. 1단계 프로빙 구현 단계.
+**완료·공개.** 5개 모델 4단계 파이프라인 측정·2회 적대 검증·논문화 완료.
+
+- 📄 논문: [PDF](../../releases/latest)(25쪽, 그림 포함) · [초고 마크다운](docs/PAPER_DRAFT.md) · [결과 정직본](RESULTS.md)
+- 🔖 DOI: [10.5281/zenodo.20791500](https://doi.org/10.5281/zenodo.20791500) (항상 최신본)
